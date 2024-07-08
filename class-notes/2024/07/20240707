@@ -1,0 +1,23 @@
+
+	DRY:	Don't Repeat Yourself
+	
+	int e;				//global
+	int main(void)
+	{
+		int a, b;		//local
+	}
+	
+	void test(void)
+	{
+		int c, d;		//local
+		scanf("%d", &a);	//undefined a;
+	}
+	
+	https://www.w3schools.com/php/php_sessions.asp
+	
+	array[0]
+	array[1]
+	array[2]
+	
+	array['name'] = "Sachin Kumar"
+	array['email'] = "sachin.kumar@onlits.com";

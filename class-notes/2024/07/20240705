@@ -1,0 +1,49 @@
+
+	Attribute
+		Simple
+		Composite
+		
+	Normalization
+	
+	Primary Key
+		- NOT NULL
+		- UNIQUE
+		
+	aadhar CHAR(12) UNIQUE NOT NULL
+	
+	Hello Folks
+	Thank you for your participation
+	Well the results are
+	@Raju 
+	Have cleared the Task 1
+	Congratulations 🎉
+	Others may leave the group now.
+	All the best for your future endeavours!
+	
+	Paradigms:
+		Structured Programming	(if-else, loop)
+		Procedure Oriented Programming (function)
+		Object Oriented Programming (object)
+		
+	Seperation of Concern
+	
+	https://www.w3schools.com/tags/ref_httpmethods.asp
+	
+	
+	Client code	---> Library ---> Database
+	
+	MySqli
+	PDO - PHP Data Objects
+	
+	JDBC
+	ADO.Net
+	
+	strcat	-	string concatenate
+	
+	PHP - PHP: HyperText Preprocessor
+	
+	#include <stdio.h>
+	#define PI 3.14
+	
+	
+	

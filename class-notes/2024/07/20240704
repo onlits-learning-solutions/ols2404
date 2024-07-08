@@ -1,0 +1,20 @@
+
+	root
+
+	administrator
+
+	admin@onlits.com
+	
+	mariadb
+	user		-	ols2404	
+	password	-	ols2404
+	
+	
+	CREATE USER 'ols2404'@'localhost' IDENTIFIED BY 'ols2404';
+	
+	% - remote
+	
+	SEQUEL: Structured English Query Language
+	SQL
+	
+	GRANT ALL PRIVILEGES ON sachin_*.*
