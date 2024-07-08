@@ -1,7 +1,13 @@
 <?php
 $message = null;
-if ($_GET['status'] == 1)
-    $message = "Invalid email or password!";
+if (isset($_GET['status'])) {
+    if ($_GET['status'] == 1)
+        $message = "Invalid email or password!";
+    else if ($_GET['status'] == 2)
+        $message = "Logout successful!";
+    else if ($_GET['status'] == 3)
+        $message = "Invalid session. Login again!";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
