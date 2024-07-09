@@ -15,7 +15,7 @@ $result = mysqli_query($connection, $sql);
 echo "$email|$password";
 
 if (mysqli_num_rows($result) > 0) {
-    header("Location:dashboard.php");
+    header("Location:myhome.php");
     session_start();
     $_SESSION['email'] = $email;
 } else {
