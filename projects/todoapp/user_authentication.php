@@ -2,11 +2,7 @@
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$connection = mysqli_connect('localhost', 'ols2404', 'ols2404', 'todoapp');
-
-if (!$connection) {
-    die(mysqli_connect_error());
-}
+require('connect.php');
 
 $sql = "SELECT email FROM user WHERE email='$email' AND password=SHA1('$password')";
 

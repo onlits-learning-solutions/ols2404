@@ -11,7 +11,7 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoApp - MyHome</title>
+    <title>TodoApp - New Task</title>
 </head>
 
 <body>
@@ -24,7 +24,14 @@ if (!isset($_SESSION['email'])) {
     </header>
 
     <main>
-        <h3>Main Content</h3>
+        <h3>New Task</h3>
+        <form action="task-save.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="due-date">Due Date</label>
+            <input type="date" name="due-date" id="due-date">
+            <button>Submit</button>
+        </form>
     </main>
 
     <footer>

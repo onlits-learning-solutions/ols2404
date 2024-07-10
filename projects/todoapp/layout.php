@@ -11,15 +11,15 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
+    <title>TodoApp - Layout</title>
 </head>
 
 <body>
     <header>
         <h1>TodoApp</h1>
         <nav>
-            <a href="">Home</a>
-            <a href="">New</a>
+            <a href="myhome.php">Home</a>
+            <a href="new-task.php">New</a>
         </nav>
     </header>
 
