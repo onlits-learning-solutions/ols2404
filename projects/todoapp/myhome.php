@@ -3,6 +3,13 @@ session_start();
 if (!isset($_SESSION['email'])) {
     header("Location:index.php?status=3");
 }
+
+require('connect.php');
+$sql = "SELECT * FROM task";
+$result = mysqli_query($connection, $sql);
+if (mysqli_num_rows($result) > 0) {
+    $tasks = mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +31,23 @@ if (!isset($_SESSION['email'])) {
     </header>
 
     <main>
-        <h3>Main Content</h3>
+        <h3>My Tasks</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($tasks as $task) { ?>
+                    <tr>
+                        <td><?= $task['id'] ?></td>
+                        <td><?= $task['name'] ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
     </main>
 
     <footer>
