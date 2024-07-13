@@ -37,6 +37,12 @@ if (mysqli_num_rows($result) > 0) {
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
+                    <th>Due Date</th>
+                    <th>Entry Date</th>
+                    <th>Priority</th>
+                    <th>Notes</th>
+                    <th>Status</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -44,6 +50,12 @@ if (mysqli_num_rows($result) > 0) {
                     <tr>
                         <td><?= $task['id'] ?></td>
                         <td><?= $task['name'] ?></td>
+                        <td><?= $task['due_date'] ?></td>
+                        <td><?= $task['entry_date'] ?></td>
+                        <td><?= $task['priority'] ?></td>
+                        <td><?= $task['Notes'] ?></td>
+                        <td><?= $task['status'] ?></td>
+                        <td><a href="">Edit</a> <a href="">Delete</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
