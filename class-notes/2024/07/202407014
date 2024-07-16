@@ -1,0 +1,32 @@
+
+ Functions of LMS:
+ 	- Book catalog management
+ 	- Membership management
+ 	- Circulation management
+ 	- Book search (OPAC)
+ 	- MIS Reporting
+ 	
+ 	
+ 	kdsi
+ 	function point
+ 	person-month	
+ 	
+ 	The online public access catalog (OPAC), now frequently synonymous
+ 	with library catalog, is an online database of materials held by a
+ 	library or group of libraries. Online catalogs have largely replaced
+ 	the analog card catalogs previously used in libraries.
+ 	
+ 	Catalog: a complete list of items, typically one in alphabetical or
+ 	other systematic order
+ 	
+ 	MIS
+ 	
+ 	
+ 	User Classes and Characteristics:
+ 		Administrator: Responsible for overall operation of LMS, frame
+ 		and apply policies.
+ 		Librarian: Book catalog management, Membership management,
+ 				   Circulation management
+ 		Members: OPAC search, Request book (adv. booking)
+ 		
+ 		
