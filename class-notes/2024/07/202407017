@@ -1,0 +1,32 @@
+
+	Degree of relationship - Number of entities participating in
+							 a relationship
+	
+	Cardinality - 1:1, 1:N, N:1, M:N
+	
+	Driver		License
+	1			1
+	
+	Driver		Vehicle Class
+	1			N
+	
+	
+	Student			UG_Degree
+	1				1
+	
+	BR06
+	ML05
+	
+	Tid		Bid		Mid
+	5		105		72
+	
+	
+	Issued To - 1:1
+	Return By - 1:1
+	
+	Sales:
+		Invoice No	Date
+		
+	Participation:
+			Total	-	All the entities participated in relationship
+			Partial	-	Not all the entities participate in relation...
