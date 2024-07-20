@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location:index.php?status=3");
-}
+// session_start();
+// if (!isset($_SESSION['email'])) {
+//     header("Location:index.php?status=3");
+// }
 ?>
 
 <!DOCTYPE html>
@@ -12,16 +12,11 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoApp - New Task</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>TodoApp</h1>
-        <nav>
-            <a href="myhome.php">Home</a>
-            <a href="new-task.php">New</a>
-        </nav>
-    </header>
+    <?php include "header.php" ?>
 
     <main>
         <h3>New Task</h3>
@@ -34,9 +29,7 @@ if (!isset($_SESSION['email'])) {
         </form>
     </main>
 
-    <footer>
-        <p>&copy;2024, Onlits Learning Solution</p>
-    </footer>
+    <?php include "footer.php" ?>
 </body>
 
 </html>
