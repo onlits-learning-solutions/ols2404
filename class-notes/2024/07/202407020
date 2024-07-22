@@ -1,0 +1,85 @@
+
+	DSA: Data Structures and Algorithms
+	
+	DS: A particular organization of data.
+	
+	WAP to accept 3 integer and sort them.
+	
+	3! = 3 x 2 x 1 = 6
+	5! = 5 x 4 x 3 x 2 x 1 = 120
+	6! = 6 x 5 x 4 x 3 x 2 x 1 = 720
+	
+	if(a > b && b > c)
+	abc
+	bca
+	
+	if(a > b && b > c && c > d && d> e)
+	
+	array: a list of similar elements
+							 integers
+							 floats
+							 students
+							 hotels
+							 
+	ANSI C
+	
+	Linked List
+	Stack
+	Queue
+	Tree
+	Graph
+	
+	main()
+	{
+		fun1();
+	}
+	
+	fun1()
+	{
+		fun2()
+	}
+	
+	fun2()
+	{
+	
+	}
+	
+	Linear
+	Non-linear
+	
+	Traversal	-	Visiting each element once
+	
+	Algorithm: The step by step solution of a problem
+	
+	Al-zabra
+	Alzebra
+	
+	1. Boil 2 cups of water for 5 minutes.
+	2. Add tea leaves to it.
+	3. Add sugar as needed.
+	4. Add milk if desired.
+	5. Boid for some time.
+	6. Serve it hot.
+	
+	
+	Algorithm: linear search
+	
+	1. Start
+	2. Initialize arr[], size, i=0, stat=0.
+	3. Read value;
+	4. Repeat while i<=size
+		If(arr[i] = value)
+			stat = 1
+		End If
+		i = i + 1
+	   End Repeat	
+	5. if(stat=1)
+		Print i
+	   else
+	   	Print "Not Found"
+	6. End
+	
+	
+	
+	
+	
