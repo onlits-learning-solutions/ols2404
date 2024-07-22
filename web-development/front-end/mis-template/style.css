@@ -1,0 +1,23 @@
+/* ------------------- Header ----------------------------------------------- */
+#logo.header {
+    width: 100px;
+}
+
+nav.inline {
+    display: inline;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav.inline a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: darkslategray;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+nav.inline a:hover {
+    color: cornflowerblue;
+}
