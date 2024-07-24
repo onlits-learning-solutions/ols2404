@@ -1,0 +1,46 @@
+
+	 Book
+	 	- Id		(PK)
+	 	- Title
+	 	- Author (MVA)
+	 	- Edition
+	 	- publisher_id (FK)
+	 	- ISBN-10
+	 	- ISBN-13
+	 	- Pages
+	 	- Price
+	 	- Rack_No
+	 	- Supplier_Id (FK)
+	 
+	 Author
+	 	- Id
+	 	- Name
+	 	
+	 Publisher
+	 	- Id
+	 	- Name
+	 	- Address (Composite)
+	 	- Contact No
+	 	- Email
+	 	- Website
+	 	- GSTIN
+	 
+	 Supplier
+	 	- Id (PK)
+	 	- Name
+	 	- Address (composite)
+	 	- Contact No
+	 	- Email
+	 	- Type (Seller/Donor)
+	 	
+	 Member
+	 	- Id (PK)
+	 	- Name
+	 	- Address
+	 	- contact No (MVA)
+	 	- Email
+	 	
+	 Degree of Relationship
+	 	Number of entities participating in a relationship
+	 Cardinality ratio
+	 
