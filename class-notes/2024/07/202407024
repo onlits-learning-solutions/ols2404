@@ -4,17 +4,13 @@
 	 	- Title
 	 	- Author (MVA)
 	 	- Edition
-	 	- publisher_id (FK)
+	 	- publisher_id (FK) X
 	 	- ISBN-10
 	 	- ISBN-13
 	 	- Pages
 	 	- Price
 	 	- Rack_No
 	 	- Supplier_Id (FK)
-	 
-	 Author
-	 	- Id
-	 	- Name
 	 	
 	 Publisher
 	 	- Id
@@ -39,6 +35,12 @@
 	 	- Address
 	 	- contact No (MVA)
 	 	- Email
+	 
+	 Book_Issue
+	 	- Id (PK)
+	 	- Date_Of_Issue
+	 	- Expected_Date_Of_Return
+	 	- Date_Of_Return
 	 	
 	 Degree of Relationship
 	 	Number of entities participating in a relationship
