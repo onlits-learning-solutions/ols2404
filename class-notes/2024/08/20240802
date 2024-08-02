@@ -1,0 +1,74 @@
+
+	Object - Big variable
+	
+	In reality student is not an object.
+	But in oop student is also considered as an object.
+	
+	- Properties/attributes			-	Data
+	- Behaviour (interraction)		-	Function/Method
+	
+	
+	int a;
+	
+	Resume sachin;
+	
+	class Resume
+	{
+		string name;
+		string address;
+		string mobile;
+		string email;
+		String objective;
+		
+		void setName(string name)		//input function
+		{
+			this->name = name;
+		}
+		
+		string getName()				// output function
+		{
+			return name;
+		}
+	};
+	
+	
+	Role						Company		Start 	End
+	Software Engineer			XYZ					
+	Junior Software Engineer	ABC
+				
+	Degree	University/Board	Year	%age
+	MCA
+	BCA
+	12
+	10
+	
+	package
+	
+	
+	Encapsulation
+	Abstraction
+	Inheritance
+	Polymorphism
+	
+	Three types of access specifier in C++/Java:
+		- Private		-	No one
+		- Protected		-	Inherited classes
+		- Public		-	Everyone
+	
+	In Java we have an additional access specifier/modifier:
+		- default		-	Public in its own package 
+		
+		
+		
+	putdata()	//output
+	{
+	
+	}
+	
+	getdata()	//input
+	{
+	
+	}
+	
+	Explain Abstraction (interface) using resume templates. 
+	

@@ -1,0 +1,89 @@
+
+ C++, VB.Net, Java
+ 
+ Array (list of similar types)
+ Pointer
+ Structure
+ 
+ struct student
+ {
+ 	int id;
+ 	char name[50];
+ };
+ 
+ int main(void)
+ {
+ 	student s;
+ }
+ 
+ si = (p * r * t)/100
+ 
+ int, float
+ 
+ struct student s;
+ STUDENT s;
+ int a;
+ float f;
+ int a[10];
+ 
+ date:	day/month/year
+ time:	hour:minute:second
+ 
+ date cd, dob;
+ age = cd - dob;
+ 
+ time dt, at;
+ stoppage = dt - at
+ 
+ A collection of related data (maybe dissimilar type)
+ 
+ WAP to add two integers using pointer.
+ 
+ 
+ Technically:
+ 
+ Class is user-defined data-type	-	Schema/Description 	- Recipe
+ Object is variable of class-type	-	Entity				- Samosa
+ 
+ 
+ Objects are basic runtime entities in an object oriented sytem.
+ 	Objects:
+ 		Book
+ 		Member
+ 		Book Issue
+ 		Book Return
+ 		
+ 1. Encapsulation: The wrapping up of data and function into a single
+ 				   unit (called class). 
+ 				   
+ 				   
+ 				   
+ class book
+ {
+ 	int id;
+ 	string title;
+ 	
+ public:
+ 	void newbook()
+ 	{
+ 	
+ 	}
+ };
+ 
+ int main(void)
+ {
+ 	book b;
+ 	b.id = 1;		//error
+ 	b.newbook();
+ }
+ 
+ 2. Abstraction
+ 
+ 
+ RAM & ROM
+ 
+ C++ by Balagurusamy
+ 
+ 
+ 
+ 
