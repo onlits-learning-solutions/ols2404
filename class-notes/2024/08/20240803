@@ -1,0 +1,46 @@
+
+	Maintainability
+	
+	Classes & Object
+	bank account
+	
+	Resume Builder
+	
+	resume	-	Entity
+	
+	45985
+	Sachin Kumar
+	
+	12589
+	Sachin Kumar
+	
+	
+	
+	status	=	0
+	
+	switchOff()
+	{
+		status = 0;
+	}
+	
+	switchOn()
+	{
+		status = 1;
+	}
+	
+	
+	book
+	publisher
+	member
+	issue
+	
+	CREATE TABLE book
+	(
+		book_id INT AUTO_INCREMENT PRIMARY KEY,
+		name VARCHAR(100),
+		publisher_id INT,
+		.
+		.
+		.
+		FOREIGN KEY (publiser_id) REFERENCES publisher (publiser_id)
+	);
