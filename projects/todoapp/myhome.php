@@ -4,12 +4,9 @@ if (!isset($_SESSION['email'])) {
     header("Location:index.php?status=3");
 }
 
-require('connect.php');
-$sql = "SELECT * FROM task";
-$result = mysqli_query($connection, $sql);
-if (mysqli_num_rows($result) > 0) {
-    $tasks = mysqli_fetch_all($result, MYSQLI_ASSOC);
-}
+require 'task.php';
+$tasks = task::task_all();
+
 ?>
 
 <!DOCTYPE html>
