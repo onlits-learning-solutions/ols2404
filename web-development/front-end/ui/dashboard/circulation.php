@@ -1,12 +1,5 @@
 <?php
-require 'book-model.php';
-require 'member-model.php';
 
-$book_id = $_POST['book_id'];
-$book = fetch_book($book_id);
-
-$member_id = $_POST['member_id'];
-$member = fetch_member($member_id);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,16 +13,15 @@ $member = fetch_member($member_id);
 <body>
     <form action="" method="post">
         <label for="book_id">Book Id</label>
-        <input type="text" name="book_id" id="book_id" value="<?= $book['id'] ?>" onblur="form.submit()">
-        <!-- <button>Search</button> <br> -->
+        <input type="text" name="book_id" id="book_id" onblur="getBook(this.value)">
         <label for="book_title">Book Title</label>
-        <input type="text" name="book_title" id="book_title" value="<?= $book['title'] ?>">
+        <input type="text" name="book_title" id="book_title">
+
         <br><br>
         <label for="member_id">Member Id</label>
-        <input type="text" name="member_id" id="member_id" value="<?= $member['id'] ?>" onblur="form.submit()">
-        <!-- <button>Search</button> -->
+        <input type="text" name="member_id" id="member_id" onblur="getMember(this.value)">
         <label for="member_name">Member Name</label>
-        <input type="text" name="member_name" id="member_name" value="<?= $member['name'] ?>">
+        <input type="text" name="member_name" id="member_name">
 
         <br><br>
 
@@ -40,6 +32,28 @@ $member = fetch_member($member_id);
             todayDate.setDate(todayDate.getDate() + 15);
             alert(todayDate.toDateString());
             document.getElementById('date_of_return').value = todayDate.toDateString();
+
+            function getBook(bookId) {
+                const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById('book_title').value = this.responseText;
+                    }
+                }
+                xhr.open('GET', 'getBook.php?id=' + bookId, true);
+                xhr.send();
+            }
+
+            function getMember(memberId) {
+                const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById('member_name').value = this.responseText;
+                    }
+                }
+                xhr.open('GET', 'getMember.php?id=' + memberId, true);
+                xhr.send();
+            }
         </script>
 
     </form>
