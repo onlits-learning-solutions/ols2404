@@ -21,17 +21,32 @@
         <label for="member_id">Member Id</label>
         <input type="text" name="member_id" id="member_id" onblur="getMember(this.value)">
         <label for="member_name">Member Name</label>
-        <input type="text" name="member_name" id="member_name">
+        <input type="text" name="member_name" id="member_name"> <br><br>
+        <select name="days" id="days" onchange="updateReturnDate(this.value)">
+            <!-- <option value="-1">Select</option> -->
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
 
         <br><br>
 
-        <input type="text" name="date_of_return" id="date_of_return">
+        <input type="date" name="date_of_return" id="date_of_return">
 
         <script>
-            const todayDate = new Date();
-            todayDate.setDate(todayDate.getDate() + 15);
-            alert(todayDate.toDateString());
-            document.getElementById('date_of_return').value = todayDate.toDateString();
+            function updateReturnDate(value) {
+                const returnDate = new Date();
+                returnDate.setDate(returnDate.getDate() + Number(value));
+                const day = returnDate.getDate();
+                let month = returnDate.getMonth() + 1;
+                if (month < 10)
+                    month = '0' + month;
+                const year = returnDate.getFullYear()
+
+                const returnDateString = year + "-" + month + "-" + day;
+                alert(returnDateString);
+
+                document.getElementById('date_of_return').value = returnDateString;
+            }
 
             function getBook(bookId) {
                 const xhr = new XMLHttpRequest();
