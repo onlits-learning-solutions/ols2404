@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int *sort(int arr[], int n, int *resultN);
+int *sort(int *arr, int n, int *resultN);
 
 int main(int argc, char const *argv[])
 {
     int resultN;
     int arr[] = {12, 99, 3, 58, 21};
     sort(arr, 5, &resultN);
-    printf("Sorted array:\n %d \n", resultN);
+    printf("Sorted array:\n");
     for (int i = 0; i < resultN; i++)
     {
         printf("%d\n", arr[i]);
@@ -15,9 +15,9 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-int *sort(int arr[], int n, int *resultN)
+int *sort(int *arr, int n, int *resultN)
 {
-    *resultN = 0;
+    *resultN = 1;
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
@@ -29,7 +29,7 @@ int *sort(int arr[], int n, int *resultN)
                 arr[j] = t;
             }
         }
-        *resultN++;
+        (*resultN)++;
     }
     return arr;
 }
