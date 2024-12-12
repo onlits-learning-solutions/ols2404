@@ -1,0 +1,9 @@
+
+	Connection connection = DriverManager.getConnection();
+	
+	SqlConnection con = new SqlConnection();
+	
+	.env
+	
+	unit testing
+	git-compatible

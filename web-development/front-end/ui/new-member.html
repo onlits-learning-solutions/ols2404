@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Member</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .col-2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .col-2 input,
+        select {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 80%;
+        }
+
+        .col-2 button {
+            padding: 5px;
+        }
+
+        .left {
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        .right  {
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="col-2">
+        <div class="left">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="right">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </form>
+
+</body>
+
+</html>

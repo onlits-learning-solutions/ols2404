@@ -1,0 +1,20 @@
+
+	Context Diagram
+	Level 0 DFD
+	
+	The highlight of DFD was to understand what process will transform
+	what data.
+	-----------------------------------------------------------------
+	1. Read book_id.
+	2. Search book details for the id to validate.
+	3. Read member_id.
+	4. Search member details for the id to validate.
+	5. Generate transaction_id.
+	6. Save transact_id, book_id, member_id, date, expected date of
+	   return etc. in the database.
+	7. Confirm the book_id.
+	-----------------------------------------------------------------
+	
+	Data Design
+		ER Model
+		Relation Model

@@ -1,0 +1,22 @@
+
+chk_marksheet_hindi
+	
+CREATE TABLE marksheet
+(
+id INT AUTO_INCREMENT PRIMARY KEY,
+roll_no INT,
+hindi INT,
+english INT,
+mathematics INT,
+science INT,
+social_studies INT,
+total_marks INT AS (hindi + english + mathematics + science + social_studies),
+percentage FLOAT AS (total_marks/500*100),
+CHECK(hindi>=0 AND hindi<=100),
+CHECK(english>=0 AND english<=100),
+CHECK(mathematics>=0 AND mathematics<=100),
+CHECK(science>=0 AND science<=100),
+CHECK(social_studies>=0 AND social_studies<=100),
+FOREIGN KEY (roll_no) REFERENCES student (roll_no)
+);
+

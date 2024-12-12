@@ -1,0 +1,87 @@
+
+	Entity
+	
+	Simple Attribute
+		Title:	Atomic Habits
+		Edition: First
+		ISBN
+		Pages
+		
+	Composite
+		Name
+			FirstName
+			MiddleName
+			LastName
+		Address
+			Street
+			City
+			District
+			State
+			Pin
+	
+	Multi-valued
+		PhoneNo
+		Authors
+			Elmashri & Navathe
+			
+		
+	- Create a database by the name 'school'
+	- Create a table called 'student' with relevant fields.
+	- Create a table call 'marksheet' with the following fields:
+		roll_no					int		[1-40]
+		name 					varchar(100)
+		hindi 					int		[0-100]
+		english 				int		[0-100]
+		mathematics 			int		[0-100]
+		science 				int		[0-100]
+		social_studies 			int		[0-100]
+		total_marks				int	-	derived (calculate) [0 - 500]
+		percentage				float	-	derived (calculate) [0-100]
+		
+		
+	-128 to 127
+	
+	ER-Model
+		Key Attributes
+	Relational Model
+		Primary Key
+	
+	Banty or Bunty
+	Prince or Prinsh
+	
+	Vaibhav
+	Variza/Wariza
+	
+	Van	-	
+	
+	Tala
+	
+	TATA
+	
+	Entities	-	Noun
+		Book
+		Member
+		Book Issue
+		Book Return
+		Employee
+	
+	Attributes
+		Book
+			- id
+			- title
+			- authors
+			- edition
+			- publisher
+			- isbn10
+			- isbn14
+			- pages
+			- price
+			- date_of_procurement
+			- category
+		
+	DFD
+	ERD
+	
+	
+	
+	
