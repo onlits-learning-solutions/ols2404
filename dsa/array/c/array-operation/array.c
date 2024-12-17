@@ -6,11 +6,13 @@
 int main(void)
 {
     int arr[MAX], size = 0, ch;
+    printf("\n\narr - main(): %p\n\n", arr);
     printf("ARRAY OPERATIONS\n");
     while (1)
     {
         printf("\nMain Menu\n");
         printf("1. Display\n");
+        printf("2. Insert\n");
         printf("Enter choice [0 for exit]: ");
         scanf("%d", &ch);
         switch (ch)
@@ -21,6 +23,9 @@ int main(void)
             break;
         case 1:
             display(arr, size);
+            break;
+        case 2:
+            insertMenu(arr, &size);
             break;
         default:
             printf("Invalid option!\n");

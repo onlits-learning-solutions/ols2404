@@ -2,4 +2,8 @@
 
 #define MAX 100
 
-int display(int *arr, int size);
+void display(int *arr, int size);
+
+void insertMenu(int *arr, int *size);
+
+void insertEnd(int *arr, int *size);

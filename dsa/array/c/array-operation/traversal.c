@@ -4,7 +4,7 @@
 */
 #include "array.h"
 
-int display(int *arr, int size)
+void display(int *arr, int size)
 {
     if (size == 0)
     {
@@ -18,5 +18,4 @@ int display(int *arr, int size)
             printf("%d\n", arr[i]);
         }
     }
-    return 0;
 }
